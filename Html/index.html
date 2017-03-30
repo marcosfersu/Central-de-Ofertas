@@ -86,30 +86,34 @@
 	.container{
 			width: 80%;
 			height: 70%;
+			display: flex;
 		/*	background-color: gray; */
 	}
 
-	.item{
+	.item1{
 			/*background: #f2f2f2; */ 
 			color: gray;
-			width: 49%;
+			width: 40%;
 			text-align: left;
 			box-sizing: border-box;
-			display: inline-block;
+			display: inline-flex;
+			flex-wrap:wrap;
+			flex-direction: column;
+			align-items: stretch;
 	}
 
-	.item h1{
+	.item1 h1{
 		color: black;
 		font-size: 3.5rem;
 		margin-bottom: 10px;
 
 	}
 
-	.item span{
+	.item1 span{
 		font-size: 4.7rem;
 	}
 
-	.item p{
+	.item1 p{
 		font-size: 1.3rem;
 		margin-bottom: 10px;
 	}
@@ -124,8 +128,23 @@
 	.bottom{
 		width: 100px;
 		height: 50px;
-		margin-top: 35%;
+		margin-top: 30%;
 		background-color: black;
+	}
+
+
+
+	.item2{
+		display: inline-flex;
+					flex-wrap:wrap;
+			flex-direction: column;
+			align-items: stretch;
+		width: 49%;
+	}
+
+	.celu img{
+		background-color: red;	
+		max-width: 50%;
 	}
 
 
@@ -168,14 +187,14 @@
 <div id="fullpage">
 	<div class="section " id="section0">
 		<section class="container">
-			<article class="item">
+			<article class="item1">
 			<div class="logo"><img src=""></div>
 			<h1><span>Somos más,</span></br>pagamos menos</h1>
 			<p>Una App para que los pequeños comerciantes</br>compremos al precio de los grandes.</p>
 			<div class="bottom"></div>
 			</article>
-			<article class="item">
-				<div></div>
+			<article class="item2">
+				<div class="celu"><img src="imgs/NEXUS frente OFERTA 1.png"></div>
 			</article>
 		</section>
 	</div>
