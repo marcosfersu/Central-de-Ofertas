@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>CENTRAL DE OFERTAS - Aplication</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="CENTRAL DE OFERTAS" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+		background-size: cover;
+	}
+	.slide{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(imgs/bg1.jpg);
+	}
+	#section0 h1{
+		top: 50%;
+		transform: translateY(-50%);
+		position: relative;
+	}
+	#section1{
+		background-image: url(imgs/bg2.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section2{
+		background-image: url(imgs/bg3.png);
+		padding: 6% 0 0 0;
+	}
+
+	#section3{
+		background-image: url(imgs/bg4.jpg);
+		padding: 6% 0 0 0;
+	}
+
+	#section3 h1{
+		color: #000;
+	}
+
+	#section4{
+		background-image: url(imgs/bg5.jpg);
+	}
+
+
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+
+
+
+<div id="fullpage">
+	<div class="section " id="section0"><h1>Somos más, pagamos menos</h1></div>
+	<div class="section" id="section1"><h1>Unite gratis a nuestra communidad</h1></div>
+	<div class="section" id="section2"><h1>Sumate a las compras que te interesen</h1></div>
+	<div class="section" id="section3"><h1>Recibí en tu puerta</h1></div>
+	<div class="section" id="section4"><h1>Bajate la app gratis y empujá tu negocio con la fuerza de todos.</h1>
+</div>
+
+</body>
+</html>
