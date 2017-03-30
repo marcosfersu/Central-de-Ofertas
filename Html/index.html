@@ -54,23 +54,37 @@
 		justify-content: center;
 		align-items: center;
 	}
-	/*#section0 h1{
-		top: 50%;
-		transform: translateY(-50%);
-		position: relative;*/
-	}
+	
 	#section1{
 		background-image: url(imgs/bg2.jpg);
-		padding: 6% 0 0 0;
+		
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		justify-content: center;
+		align-items: center;
 	}
 	#section2{
 		background-image: url(imgs/bg3.png);
-		padding: 6% 0 0 0;
+		
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		justify-content: center;
+		align-items: center;
 	}
 
 	#section3{
 		background-image: url(imgs/bg4.jpg);
-		padding: 6% 0 0 0;
+		
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		justify-content: center;
+		align-items: center;
 	}
 
 	#section3 h1{
@@ -79,6 +93,13 @@
 
 	#section4{
 		background-image: url(imgs/bg5.jpg);
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		justify-content: center;
+		align-items: center;
 	}
 
 	/*flexbox
@@ -96,10 +117,12 @@
 			width: 40%;
 			text-align: left;
 			box-sizing: border-box;
-			display: inline-flex;
-			flex-wrap:wrap;
+			
+			display: flex;
+			
+			flex-wrap: nowrap;
 			flex-direction: column;
-			align-items: stretch;
+			align-content: flex-start;
 	}
 
 	.item1 h1{
@@ -126,11 +149,15 @@
 	}
 
 	.bottom{
-		width: 100px;
-		height: 50px;
-		margin-top: 30%;
-		background-color: black;
+		width: 200px;
+		height: 100px;
+		background-color: red;
+		margin-top: 32%;
+
 	}
+
+
+
 
 
 
@@ -158,6 +185,20 @@
 	    left: 121px;
 	}
 
+
+	/* Secition 2 */
+
+	#unite{
+		width: 50%;
+	}
+
+	#bottom1{
+		margin-top: 11%;
+	}
+
+	#container1{
+		align-self: flex-end;
+	}
 
 
 
@@ -199,10 +240,10 @@
 	<div class="section " id="section0">
 		<section class="container">
 			<article class="item1">
-			<div class="logo"><img src=""></div>
-			<h1><span>Somos más,</span></br>pagamos menos</h1>
-			<p>Una App para que los pequeños comerciantes</br>compremos al precio de los grandes.</p>
-			<div class="bottom"></div>
+				<div class="logo"><img src=""></div>
+				<h1><span>Somos más,</span></br>pagamos menos</h1>
+				<p>Una App para que los pequeños comerciantes</br>compremos al precio de los grandes.</p>
+				<div class="bottom"></div>
 			</article>
 			<article class="item2">
 				<div class="celu">
@@ -213,8 +254,17 @@
 			</article>
 		</section>
 	</div>
-	<div class="section" id="section1"><h1>Unite gratis a nuestra communidad</h1></div>
-	<div class="section" id="section2"><h1>Sumate a las compras que te interesen</h1></div>
+	<div class="section" id="section1">
+	<section class="container" id="container1">
+			<article class="item1" id="unite">
+			<div class="logo"><img src=""></div>
+			<h1><span>Unite gratis</span></br>a nuestra comunidad</h1>
+			<p>Bajate la App y formá parte.</br>Ahora lo sabés, a la hora de comprar no estamos solos.</p>
+			<div class="bottom" id="bottom1"></div>
+			</article>
+			</section>
+	</div>
+	<div class="section" id="section2"><h1>Recibí en tu puerta</h1></div>
 	<div class="section" id="section3"><h1>Recibí en tu puerta</h1></div>
 	<div class="section" id="section4"><h1>Bajate la app gratis y empujá tu negocio con la fuerza de todos.</h1>
 </div>
