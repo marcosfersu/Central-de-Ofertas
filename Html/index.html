@@ -16,6 +16,14 @@
 		font-size: 16px;
 	}
 
+	.clearfix:after { 
+	   content: "."; 
+	   visibility: hidden; 
+	   display: block; 
+	   height: 0; 
+	   clear: both;
+	}
+
 	/* Style for our header texts
 	* --------------------------------------- */
 	h1{
@@ -30,6 +38,8 @@
 	* --------------------------------------- */
 	.section{
 		text-align:center;
+		display: table;
+		width: 100%;
 	}
 
 
@@ -46,167 +56,61 @@
 	* --------------------------------------- */
 	#section0{
 		background-image: url(imgs/bg1.jpg);
+		
 
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-
-		justify-content: center;
-		align-items: center;
 	}
 	
 	#section1{
 		background-image: url(imgs/bg2.jpg);
-		
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
 
-		justify-content: center;
-		align-items: center;
+
+
 	}
 	#section2{
 		background-image: url(imgs/bg3.png);
 		
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-
-		justify-content: center;
-		align-items: center;
 	}
 
 	#section3{
 		background-image: url(imgs/bg4.jpg);
-		
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
 
-		justify-content: center;
-		align-items: center;
-	}
-
-	#section3 h1{
-		color: #000;
 	}
 
 	#section4{
 		background-image: url(imgs/bg5.jpg);
 
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
 
-		justify-content: center;
-		align-items: center;
 	}
 
-	/*flexbox
-	-----------------------------------------*/
+	.co-tableCell{
+		display: table-cell;
+		vertical-align: middle;
+		height: 873px;
+	}
+
 	.container{
-			width: 80%;
-			height: 70%;
-			display: flex;
-		/*	background-color: gray; */
+		margin-right: auto;
+	    margin-left: auto;
+	    padding-left: 15px;
+	    padding-right: 15px;
 	}
 
-	.item1{
-			/*background: #f2f2f2; */ 
-			color: gray;
-			width: 40%;
-			text-align: left;
-			box-sizing: border-box;
-			
-			display: flex;
-			
-			flex-wrap: nowrap;
-			flex-direction: column;
-			align-content: flex-start;
+	.row{
+	    margin-left: -15px;
+	    margin-right: -15px;
 	}
 
-	.item1 h1{
-		color: black;
-		font-size: 3.5rem;
-		margin-bottom: 10px;
-
+	.mbottom-20{
+		width: 80%;
+		margin: 0 auto;
 	}
 
-	.item1 span{
-		font-size: 4.7rem;
+	.text{
+		display: inline-block;
+		float: left;
+		text-align: left;
 	}
 
-	.item1 p{
-		font-size: 1.3rem;
-		margin-bottom: 10px;
-	}
-
-	.logo{
-		width: 200px;
-		height: 100px;
-		margin: 0 0 10%;
-		background-color: red;
-	}
-
-	.bottom{
-		width: 200px;
-		height: 100px;
-		background-color: red;
-		margin-top: 32%;
-
-	}
-
-
-
-
-
-
-	.item2{
-		display: inline-flex;
-					flex-wrap:wrap;
-			flex-direction: column;
-			align-items: stretch;
-		width: 49%;
-	}
-
-	.celu img{
-		display: inline-flex;
-		max-width: 50%;
-	}
-
-	#celu1{
-		position: relative;
-		top: -570px;
-	}
-
-	#celu2{
-	    position: relative;
-	    max-width: 68%;
-	    left: 121px;
-	}
-
-
-	/* Secition 2 */
-
-	#unite{
-		width: 50%;
-	}
-
-	#bottom1{
-		margin-top: 11%;
-	}
-
-	#container1{
-		align-self: flex-end;
-	}
-
-
-
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
 	</style>
 
 	<!--[if IE]>
@@ -237,33 +141,40 @@
 
 
 <div id="fullpage">
-	<div class="section " id="section0">
-		<section class="container">
-			<article class="item1">
-				<div class="logo"><img src=""></div>
-				<h1><span>Somos más,</span></br>pagamos menos</h1>
-				<p>Una App para que los pequeños comerciantes</br>compremos al precio de los grandes.</p>
-				<div class="bottom"></div>
-			</article>
-			<article class="item2">
-				<div class="celu">
-					<img src="imgs/GALAXY blanco OFERTAS 2.png" id="celu2">
-					<img src="imgs/NEXUS frente OFERTA 1.png" id="celu1">
-
+	<div class="section" id="section0">
+		<section class="co-tableCell">
+			<div class="container">
+				<div class="row  mbottom-20 clearfix">
+					<div class="text  ">
+						<figure></figure>
+						<h1><span>Somos más,</span></br>pagamos menos</h1>
+						<p>Una App para que los pequeños comerciantes</br>compremos al precio de los grandes.</p>
+					</div>
+					<div class="image">
+						<img src="">
+					</div>
 				</div>
-			</article>
+				<div class="row mbottom-50">
+					<div class="rbottom">
+						<a href=""></a>
+					</div>
+				</div>
+			</div>			
 		</section>
 	</div>
 	<div class="section" id="section1">
-	<section class="container" id="container1">
-			<article class="item1" id="unite">
-			<div class="logo"><img src=""></div>
-			<h1><span>Unite gratis</span></br>a nuestra comunidad</h1>
-			<p>Bajate la App y formá parte.</br>Ahora lo sabés, a la hora de comprar no estamos solos.</p>
-			<div class="bottom" id="bottom1"></div>
-			</article>
+
+			<section class="container" id="container1">
+				<article class="texto" id="unite">
+					<div class="icono"><img src=""></div>
+					<h1><span>Unite gratis</span></br>a nuestra comunidad</h1>
+					<p>Bajate la App y formá parte.</br>Ahora lo sabés, a la hora de comprar no estamos solos.</p>
+					<div class="bottom" id="bottom1"></div>
+				</article>
 			</section>
-	</div>
+
+			<div class="yellow"></div>
+		</div>
 	<div class="section" id="section2"><h1>Recibí en tu puerta</h1></div>
 	<div class="section" id="section3"><h1>Recibí en tu puerta</h1></div>
 	<div class="section" id="section4"><h1>Bajate la app gratis y empujá tu negocio con la fuerza de todos.</h1>
