@@ -130,3 +130,12 @@
 	    clip-path: polygon(0 0, 0 100vh, 100% 100vh);
 	    background: #FFD400;
 	}
+
+	#flip{
+		clip-path: polygon(100% 0, 0 100vh, 100% 100vh);
+	}
+
+	.fright{
+		float: right;
+		text-align: right;
+	}
