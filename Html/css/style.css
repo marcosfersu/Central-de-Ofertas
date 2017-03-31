@@ -55,8 +55,6 @@
 
 	.text{
 		display: inline-block;
-		float: left;
-		text-align: left;
 		margin-left: 40px;
 		margin-top: 100px;
 		position: relative;
@@ -88,7 +86,6 @@
 		background-color: black;
 	    width: 178px;
 	    height: 60px;
-		float: left;
 		margin-left: 40px;
 		z-index: 2;
 		position: relative;
@@ -138,4 +135,46 @@
 	.fright{
 		float: right;
 		text-align: right;
+	}
+
+	.fleft{
+		float: left;
+		text-align: left;
+	}
+
+	.center{
+		margin: 0 auto;
+	}
+
+	#botspace-80{
+		margin-bottom: 80px;
+	}
+
+	#botspace-50{
+		margin-bottom: 50px;
+	}
+
+	.email{
+		margin: 0 auto;
+	    border: 3px solid #FFD400;
+	    width: 350px;
+	    padding-left: 10px;
+		margin-top: 66px;
+		display: inline-block;
+	}
+
+	::-webkit-input-placeholder {
+		color: #FFD400;
+	}
+
+	:-moz-placeholder { 
+		color: #FFD400;  
+	}
+
+	::-moz-placeholder { 
+		color: #FFD400;  
+	}
+
+	:-ms-input-placeholder {  
+		color: #FFD400;  
 	}
