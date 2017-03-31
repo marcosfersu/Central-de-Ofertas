@@ -112,24 +112,27 @@
 	}
 
 	.diagonal { 
+	    width: 0;
+	    height: 0;
+	    border-style: solid;
+	    border-width: 96vh 0 0 101vw;
+	    border-color: transparent transparent transparent #FFD400;
 	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    height: 100vh;
-	    width: 100%;
-	    display: block;
+	    left: -11px;
+	    top: 94px;
 	    opacity: 0.7;
-	    z-index: 1;
+    	filter: alpha(opacity=70);
 	}
 
-	.diagonal:first-child {
+	/*.diagonal:first-child {
 	    -webkit-clip-path: polygon(0 0, 0 100vh, 100% 100vh);
 	    clip-path: polygon(0 0, 0 100vh, 100% 100vh);
 	    background: #FFD400;
-	}
+	}*/
 
 	#flip{
-		clip-path: polygon(100% 0, 0 100vh, 100% 100vh);
+	    border-width: 0 0 96vh 101vw;
+		border-color: transparent transparent #FFD400 transparent;
 	}
 
 	.fright{
