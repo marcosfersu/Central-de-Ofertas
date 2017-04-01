@@ -124,12 +124,6 @@
     	filter: alpha(opacity=70);
 	}
 
-	/*.diagonal:first-child {
-	    -webkit-clip-path: polygon(0 0, 0 100vh, 100% 100vh);
-	    clip-path: polygon(0 0, 0 100vh, 100% 100vh);
-	    background: #FFD400;
-	}*/
-
 	#flip{
 	    border-width: 0 0 96vh 101vw;
 		border-color: transparent transparent #FFD400 transparent;
@@ -180,4 +174,12 @@
 
 	:-ms-input-placeholder {  
 		color: #FFD400;  
+	}
+
+	#fp-nav ul, .fp-slidesNav ul{
+		opacity: 0.7;
+	}
+
+	#fp-nav ul li .fp-tooltip.right{
+		color: black;
 	}
