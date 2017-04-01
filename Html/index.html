@@ -23,7 +23,12 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				verticalCentered: false
+				sectionsColor: ['black', '#1BBC9B', '#7E8F7C'],
+				scrollBar: false,
+				navigation: true,
+				navigationPosition: 'right',
+				navigationTooltips: ['First page', 'Second page', 'Third and last page'],
+				verticalCentered: false,
 			});
 		});
 	</script>
