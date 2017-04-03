@@ -28,12 +28,18 @@
 
 	}
 
+	.section{
+	    text-align:center;
+	    display: table;
+	    width: 100%;
+	    background-size: cover;
+	}
+
 
 
 	.co-tableCell{
 		display: table-cell;
 		vertical-align: middle;
-		height: 873px;
 	}
 
 	.container{

@@ -1,4 +1,7 @@
 
+		
+		/* media Queries */
+
 		@media screen and (max-width: 75em){
 			.text { color: red; }
 
