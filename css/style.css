@@ -65,6 +65,7 @@
 		margin-top: 100px;
 		position: relative;
 		z-index: 2;
+		width: 40%;
 	}
 
 	.text h1{
@@ -81,6 +82,7 @@
 
 	.image{
 		float: right;
+		width: 40%;
 	}
 
 	.mbottom-50{
