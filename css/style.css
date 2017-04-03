@@ -89,10 +89,7 @@
 	}
 
 	.rbottom{
-		background-color: black;
-	    width: 178px;
-	    height: 60px;
-		margin-left: 40px;
+	    width: 17%;
 		z-index: 2;
 		position: relative;
 	}

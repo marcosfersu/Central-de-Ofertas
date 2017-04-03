@@ -72,6 +72,10 @@ a:hover{
      clear: both;
   }
 
+  img{
+    max-width: 100%;
+  }
+
   /* Style for our header texts
   * --------------------------------------- */
   h1{
