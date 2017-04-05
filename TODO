@@ -1,3 +1,10 @@
 - SACAR LOS HIPERBINCILOS / PUSHEAR NO COMO DOWN
 - Sacar class fleft.
 -Arreglar imagenes sacarles padding innecesario.
+
+
+queries
+
+1100px y mas = es como esta ahora
+1099px a 500 = achicar todo un poquito
+-500 = cambio a mobile

@@ -8,9 +8,16 @@ body {
 }
 
 #section0 .container {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	height: 100%;
+	max-width: 80%;
+	text-align: justify;
+}
+
+#section0 .container:before, #section0 .container:after{
+	content: '';
+	display: inline-block;
+	width: 100%;
+	text-align: justify;
 }
 
 #section1 {
@@ -40,6 +47,7 @@ body {
 }
 
 .container {
+	height: 100%;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -73,7 +81,11 @@ body {
 .image {
    	display: inline-block;
    	vertical-align: middle;
-    width: 40%;
+	max-height: 400px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 40px;
 }
 
 .mbottom-50 {
@@ -97,8 +109,11 @@ body {
 .info {
 	display: inline-block;
 	vertical-align: middle;
-	width: 40%;
+	width: 50%;
 	max-width: 680px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .playstore {
