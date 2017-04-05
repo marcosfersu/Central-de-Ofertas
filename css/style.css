@@ -7,6 +7,12 @@ body {
     background-image: url(../imgs/bg1.jpg);
 }
 
+#section0 .container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 #section1 {
     background-image: url(../imgs/bg2.jpg);
 }
@@ -29,7 +35,7 @@ body {
     background-size: cover;
 }
 
-.co-tableCell {
+.co-tableCell .tuvieja{
     vertical-align: middle;
 }
 
@@ -52,17 +58,10 @@ body {
 
 .text {
     display: inline-block;
-    margin-left: 40px;
-    margin-top: 100px;
     position: relative;
     z-index: 2;
-    width: 40%;
 }
-
-.text h1 {
-    font-size: 4.5rem;
-}
-
+ 
 .text span {
     font-size: 5.7rem;
 }
@@ -72,7 +71,8 @@ body {
 }
 
 .image {
-    float: right;
+   	display: inline-block;
+   	vertical-align: middle;
     width: 40%;
 }
 
@@ -92,6 +92,26 @@ body {
     border-right: 100px solid transparent;
     border-bottom: 100px solid #08B;
     position: absolute;
+}
+
+.info {
+	display: inline-block;
+	vertical-align: middle;
+	width: 40%;
+	max-width: 680px;
+}
+
+.playstore {
+	width: 260px;
+	display: inline-block;
+	float: left;
+	margin-left: -20px;
+}
+
+.section-title {
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 70px;
 }
 
 .alto {
