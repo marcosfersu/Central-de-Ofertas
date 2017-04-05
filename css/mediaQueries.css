@@ -69,20 +69,9 @@
 		    transform: translateY(0);
 		}
 
-		.section-text { font-size: 17px; }
-
 		.logo-center {
 		    margin: 0 auto;
 		    width: 56%;
-		}
-
-		.section-icon {
-    		max-width: 110px;
-    		margin-bottom: 5%;
-		}
-
-		.section .row {
-			width: 82%;
 		}
 		
 		#info-back{
