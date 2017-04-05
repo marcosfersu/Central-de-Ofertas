@@ -1,20 +1,40 @@
+/* media Queries */
 
+	/* TABLE */
+	@media screen and (max-width: 768px){
 		
-		/* media Queries */
-
-		@media screen and (max-width: 75em){
-			.text { color: red; }
-
+		.section-title  { 
+			font-size: 37px;
+			line-height: 45px;
 		}
 
-		@media screen and (max-width: 64em){
-			.text { color: blue; }
-
+		#section0 .section-title {
+	    	margin-top: 18px;
 		}
 
-		@media screen and (max-width: 48em){
-			.text { color: yellow; }	
+		.image { max-height: 300px; }
+
+		.info { width: 58%; }
+
+		.section-text { font-size: 17px; }
+
+		.logo-center {
+		    width: 33%;
 		}
+
+		.section-icon {
+    		max-width: 110px;
+    		margin-bottom: 5%;
+		}
+
+		.section .row {
+			width: 82%;
+		}
+		
+		#info-back{
+			width: 67%;
+		}	
+	}	
 
 		@media screen and (max-width: 37.5em){
 			.header { background-color: cyan; }	
