@@ -1,3 +1,8 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+	color: #2E2C33;
+}
+
 #section0 {
     background-image: url(../imgs/bg1.jpg);
 }
