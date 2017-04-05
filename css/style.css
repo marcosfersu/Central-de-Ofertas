@@ -35,6 +35,12 @@ body {
     background-image: url(../imgs/bg5.jpg);
 }
 
+#section4 .playstore{
+    float: none;
+    margin: 0;
+    width: 200px;
+}
+
 .section {
     text-align: center;
     width: 100%;
@@ -81,9 +87,15 @@ body {
 	margin-left: 40px;
 }
 
-.mbottom-50 {
-    width: 80%;
-    margin: 0 auto;
+.boton {
+    display: inline-block;
+    background-color: #FFD400;
+    color: white;
+    cursor: pointer;
+    border: 3px solid #FFD400;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    line-height: 36px;
 }
 
 .rbottom {
@@ -129,6 +141,17 @@ body {
     font-weight: 500;
     margin-top: 20px;
 }
+
+.closer-text{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.bold-text{
+    font-weight: 300;
+    margin-top: 50px;
+}
+
 .alto {
     margin-top: 350px;
     margin-bottom: 50px;
@@ -186,9 +209,10 @@ body {
     margin: 0 auto;
     border: 3px solid #FFD400;
     width: 350px;
-    padding-left: 10px;
-    margin-top: 66px;
+    margin-top: 10px;
     display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
 }
 
 ::-webkit-input-placeholder {
