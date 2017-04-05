@@ -108,18 +108,13 @@
 		}
 	}		
 
-		@media screen and (max-width: 37.5em){
-			.header { background-color: cyan; }	
+	@media screen and (max-width: 425px){
 
-			.responsible figure { width: 100% }	
-			.responsible figure:nth-last-child(1) { width: 100%; }	
-			.header img { max-width: 100%; }
+		.section-title{
+			font-size: 40px;
 		}
 
-		@media screen and (max-width: 30em){
-			.header { background-color: magenta; }			
+		.section-icon{
+			max-width: 95px;
 		}
-
-		@media screen and (max-width: 20em){
-			.header { background-color: yellow; }			
-		}
+	}
