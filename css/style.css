@@ -17,7 +17,11 @@ body {
 }
 
 #section0 .playstore {
-	margin-top: 90px;
+	margin-top: 40px;
+}
+
+#section0 .section-title {
+	margin-top: 40px;
 }
 
 #section0 .container:before, #section0 .container:after{
@@ -35,12 +39,32 @@ body {
     background-image: url(../imgs/bg3.png);
 }
 
+#section2 .row{
+	left: auto;
+	right: 0;
+	text-align: right;
+}
+
+#section2 .playstore,#section2 .section-icon{
+	float: right;
+}
+
+#section2 .section-title {
+	clear: both;
+}
+
 #section3 {
     background-image: url(../imgs/bg4.jpg);
 }
 
 #section4 {
     background-image: url(../imgs/bg5.jpg);
+}
+
+#section4 .playstore{
+    float: none;
+    margin: 0;
+    width: 200px;
 }
 
 .section {
@@ -72,20 +96,12 @@ body {
     margin: 0 auto;
 }
 
-.text {
-    display: inline-block;
+.text { 
     position: relative;
     z-index: 2;
+    margin-left: 20px;
 }
  
-.text span {
-    font-size: 5.7rem;
-}
-
-.text p {
-    font-size: 1.6rem;
-}
-
 .image {
    	display: inline-block;
    	vertical-align: top;
@@ -96,9 +112,15 @@ body {
 	margin-left: 40px;
 }
 
-.mbottom-50 {
-    width: 80%;
-    margin: 0 auto;
+.boton {
+    display: inline-block;
+    background-color: #FFD400;
+    color: white;
+    cursor: pointer;
+    border: 3px solid #FFD400;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    line-height: 36px;
 }
 
 .rbottom {
@@ -128,13 +150,12 @@ body {
 	width: 200px;
 	display: inline-block;
 	float: left;
-	margin-left: -20px;
 	margin-top: 20px;
 }
 
 .section-title {
 	font-size: 3vw;
-	font-weight: 700;
+	font-weight: 900;
 	line-height: 3.15vw;
 }
 
@@ -146,6 +167,18 @@ body {
 .section-text {
 	font-weight: 700;
 	font-size: 14px;
+    margin-top: 20px;
+
+}
+
+.closer-text{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.bold-text{
+    font-weight: 300;
+    margin-top: 50px;
 }
 
 .alto {
@@ -205,9 +238,11 @@ body {
     margin: 0 auto;
     border: 3px solid #FFD400;
     width: 350px;
-    padding-left: 10px;
-    margin-top: 66px;
+    margin-top: 10px;
     display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 10px;
 }
 
 ::-webkit-input-placeholder {
