@@ -1,11 +1,12 @@
 /* media Queries */
 
-	/* TABLE */
-	@media screen and (max-width: 768px){
+	/* LAPTOP */
+	@media screen and (max-width: 1024px){
 		
 		.section-title  { 
 			font-size: 37px;
 			line-height: 45px;
+			color: red;
 		}
 
 		#section0 .section-title {
@@ -34,7 +35,78 @@
 		#info-back{
 			width: 67%;
 		}	
-	}	
+	}
+
+
+
+	/* TABLET */
+	@media screen and (max-width: 768px){
+		
+		.section-title  { 
+			font-size: 34px;
+			color: blue;
+		}
+
+		#section0 .section-title {
+	    	margin-top: 28px;
+		}
+
+		#section0 .playstore {
+    		margin: 5% auto 7%;
+	    	float: none;
+	        display: block;
+    	}
+
+		.image { 
+    		margin: 0 auto; 
+    		top: 0;
+		    transform: translateY(0);
+		    display: block;
+		}
+
+		.info {
+			width: 100%;
+		    margin-top: 14%;
+		    top: 0;
+		    transform: translateY(0);
+		}
+
+		.section-text { font-size: 17px; }
+
+		.logo-center {
+		    margin: 0 auto;
+		    width: 56%;
+		}
+
+		.section-icon {
+    		max-width: 110px;
+    		margin-bottom: 5%;
+		}
+
+		.section .row {
+			width: 82%;
+		}
+		
+		#info-back{
+			width: 67%;
+	    	top: 50%;
+    		transform: translateY(-50%);
+    		margin-top: 0;
+		}	
+
+		.fleft{
+			float: none;
+			text-align: center;
+		}
+
+		.email{
+			width: 71%;
+		}
+
+		.centro{
+			text-align: center;
+		}
+	}		
 
 		@media screen and (max-width: 37.5em){
 			.header { background-color: cyan; }	
