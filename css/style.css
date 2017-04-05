@@ -80,7 +80,7 @@ body {
 
 .image {
    	display: inline-block;
-   	vertical-align: middle;
+   	vertical-align: top;
 	max-height: 400px;
 	position: relative;
 	top: 50%;
@@ -121,6 +121,7 @@ body {
 	display: inline-block;
 	float: left;
 	margin-left: -20px;
+    margin-top: 90px;
 }
 
 .section-title {
