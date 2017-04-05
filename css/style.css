@@ -213,6 +213,7 @@ body {
     display: inline-block;
     height: 40px;
     box-sizing: border-box;
+    padding-left: 10px;
 }
 
 ::-webkit-input-placeholder {
