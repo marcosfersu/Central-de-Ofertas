@@ -137,13 +137,13 @@ body {
 }
 
 .info {
-	display: inline-block;
-	vertical-align: middle;
-	width: 40%;
-	max-width: 680px;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    max-width: 680px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .playstore {
@@ -154,9 +154,9 @@ body {
 }
 
 .section-title {
-	font-size: 3vw;
-	font-weight: 900;
-	line-height: 3.15vw;
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 55px;
 }
 
 .section-title .internal{
@@ -165,8 +165,8 @@ body {
 }
 
 .section-text {
-	font-weight: 700;
-	font-size: 14px;
+    font-weight: 700;
+    font-size: 17px;
     margin-top: 20px;
 
 }
@@ -174,11 +174,14 @@ body {
 .closer-text{
     margin-top: 20px;
     margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 17px;
 }
 
 .bold-text{
-    font-weight: 300;
     margin-top: 50px;
+    font-weight: 700;
+    font-size: 17px;
 }
 
 .alto {
