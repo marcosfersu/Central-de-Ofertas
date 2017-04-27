@@ -24,30 +24,15 @@ $(document).ready(function(){
 // animate - section0
 
 
-(function() {
-
-	var aboutEl = $('div.image'),
-	//	aboutElOffset = aboutEl.offset().top/1.1,
-	//	aboutElOffset = aboutEl.offset(),
-		documentEl = $(document);
-
-		documentEl.on('scroll', function() {
-			if( aboutEl.hasClass('hidden')) aboutEl.removeClass('hidden')
-		});
-
-})();
 
 
 // animate - section1
 
-(function() {
-
-	var aboutEl = $('div.row'),
-		aboutElOffset = aboutEl.offset().top/1.1,
-		documentEl = $(document);
-
-		documentEl.on('scroll', function() {
-			if( documentEl.scrollTop() > aboutElOffset && aboutEl.hasClass('hidden')) aboutEl.removeClass("hidden")
-		});
-
-})();
+$(document).ready(function(){
+    var aboutEl = $('image');
+    var aboutElOffset = aboutEl.offset().top/1.1;
+    var documentEl = $(document);
+    documentEl.on('scroll', function() {
+        if( documentEl.scrollTop() > aboutElOffset && aboutEl.hasClass('hidden')) aboutEl.removeClass("hidden")
+    });
+});
