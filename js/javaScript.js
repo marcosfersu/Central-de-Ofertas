@@ -16,7 +16,7 @@ $(document).ready(function(){
 			var leavingSection = $(this);
 			var aboutEl = $('.row');
 
-			//after leaving section 2
+			// after leaving section 2
 			if(index == 1 && direction =='down'){
 				aboutEl.removeClass("hidden");
 			}
