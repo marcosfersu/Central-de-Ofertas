@@ -12,19 +12,30 @@ $(document).ready(function(){
 		navigationPosition: 'right',
 		navigationTooltips: ['Somos más', 'Unite gratis', 'Sumate', 'Recibí', 'Mail',],
 		verticalCentered: false,
+
+		afterLoad: function(anchorLink, index){
+			var aboutEl = $('.row');
+
+			if(index == 1){
+				aboutEl.removeClass("hidden1");
+			}
+		},
+
 		onLeave: function(index, nextIndex, direction){
 			var leavingSection = $(this);
 			var aboutEl = $('.row');
 
 			// after leaving section 2
 			if(index == 1 && direction =='down'){
-				aboutEl.removeClass("hidden");
+				aboutEl.removeClass("hidden2");
 			}
 
-			else if(index == 2 && direction == 'up'){
-				aboutEl.removeClass("hidden");
+			// after leaving section 3
+			if(index == 2 && direction =='down'){
+				aboutEl.removeClass("hidden3");
 			}
 		}
+
 	});
 
     // var aboutEl = $('.image');

@@ -42,6 +42,7 @@ body {
 #section2 .row{
 	left: auto;
 	right: 0;
+    float: right;
 	text-align: right;
 }
 
@@ -92,7 +93,7 @@ body {
 }
 
 .section .row {
-    transition: all 1s ease;
+    transition: all 1.5s ease;
 }
 
 .mbottom-20 re    width: 80%;
@@ -113,11 +114,22 @@ body {
 	top: 50%;
 	transform: translateY(-50%);
 	margin-left: 40px;
+    float: right;
 }
 
-.hidden{
+.hidden1{
     opacity: 0;
-    transform: translate(-300px);
+    margin-left: 10%;
+}
+
+.hidden2{
+    opacity: 0;
+    margin-left: 10%;
+}
+
+.hidden3{
+    margin-right: 10%;
+    opacity: 0;
 }
 
 .boton {
@@ -205,22 +217,28 @@ body {
     font-size: 3.5rem;
 }
 
-.backdrop {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 100vh 0 0 100vw;
-    border-color: transparent transparent transparent #FFD400;
+// .backdrop {
+//     width: 0;
+//     height: 0;
+//     border-style: solid;
+//     border-width: 100vh 0 0 100vw;
+//     border-color: transparent transparent transparent #FFD400;
+//     position: absolute;
+//     left: 0px;
+//     bottom: 0px;
+//     opacity: 0.7;
+//     filter: alpha(opacity=70);
+// }
+.backdrop{
     position: absolute;
-    left: 0px;
-    bottom: 0px;
-    opacity: 0.7;
-    filter: alpha(opacity=70);
+    width: 50%;
+    height: 100vh;
+    background-color: #FFD400; 
 }
 
 #flip {
-    border-width: 0 0 96vh 101vw;
-    border-color: transparent transparent #FFD400 transparent;
+    right: 0;
+    background-color: white;
 }
 
 .fright {
@@ -282,10 +300,14 @@ body {
 }
 
 .section .row {
-	position: absolute;
-	width: 50%;
-	bottom: 30px;
-	left: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60%;
+    max-width: 680px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
 }
 
 .section-icon {

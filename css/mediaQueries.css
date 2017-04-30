@@ -12,6 +12,10 @@
 	    	margin-top: 18px;
 		}
 
+		.section .hidden1{
+			margin-left: 0;
+		}
+
 		.image { max-height: 300px; }
 
 		.info { width: 58%; }
@@ -28,7 +32,7 @@
 		}
 
 		.section .row {
-			width: 82%;
+			width: 45%;
 		}
 		
 		#info-back{
