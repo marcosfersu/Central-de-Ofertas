@@ -46,11 +46,11 @@ $(document).ready(function(){
 	});
 
 	$(".bottomVideo").click(function(){
-		alert( "Handler for called." );
+			$(".row").removeClass("videoLeft");
+			$(".image").removeClass("videoRight");
 	});
-	
-});
 
+});
 
 
     // var aboutEl = $('.image');
@@ -63,3 +63,27 @@ $(document).ready(function(){
 
 
 // animate - section1
+
+/*	
+	$(".bottomVideo").click(function(){
+
+		var videoOn = 0;
+
+		if(videoOn = 0){
+			$(".videoLeft").css("left", "-=699");
+			$(".videoRight").css("left", "+=700");
+			videoOn = 1;
+
+		}else(videoOn == 1){
+			$(".videoLeft").css("left", "+=699");
+			$(".videoRight").css("left", "-=700");
+			videOn == 0;
+		}
+	});
+
+
+	$(".bottomVideo").click(function(){
+			$(".videoLeft").css("left", "-=699")
+			$(".videoRight").css("left", "+=700")
+	});
+	*/

@@ -118,6 +118,7 @@ body {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+    left: 700px;
 }
 
 .hidden1{
@@ -316,6 +317,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     float: left;
+    left: -700px;
 }
 
 .section-icon {
@@ -341,4 +343,12 @@ display: none;
     transform: translateY(-50%);
     margin: 0 auto;
     cursor: pointer;
+}
+
+.section div .videoLeft{
+    left: 0;
+}
+
+.section div .videoRight{
+    left: 0;
 }
