@@ -15,9 +15,11 @@ $(document).ready(function(){
 
 		afterLoad: function(anchorLink, index){
 			var aboutEl = $('.row');
+			var aboutImg = $(".image")
 
 			if(index == 1){
-				aboutEl.removeClass("hidden1");
+				aboutEl.removeClass("hidden1"),
+				aboutImg.removeClass("hidden3");
 			}
 		},
 
@@ -33,6 +35,11 @@ $(document).ready(function(){
 			// after leaving section 3
 			if(index == 2 && direction =='down'){
 				aboutEl.removeClass("hidden3");
+			}
+
+			// after leaving section 4
+			if(index == 3 && direction =='down'){
+				aboutEl.removeClass("hidden4");
 			}
 		}
 

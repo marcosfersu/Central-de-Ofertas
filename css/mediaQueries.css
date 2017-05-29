@@ -18,7 +18,7 @@
 
 		.image { max-height: 300px; }
 
-		.info { width: 58%; }
+		.section .row { width: 58%; }
 
 		.section-text { font-size: 17px; }
 
@@ -53,7 +53,7 @@
 	    	margin-top: 28px;
 		}
 
-		#section0 .playstore {
+		.playstore {
     		margin: 5% auto 7%;
 	    	float: none;
 	        display: block;
@@ -64,16 +64,24 @@
     		top: 0;
 		    transform: translateY(0);
 		    display: block;
+		    float: none;
 		}
 
-		.info {
+		.section .row {
 			width: 100%;
 		    margin-top: 14%;
 		    top: 0;
 		    transform: translateY(0);
+		    float: none;
+		    text-align: center;
 		}
 
 		.logo-center {
+		    margin: 0 auto;
+		    width: 56%;
+		}
+
+		.section-icon {
 		    margin: 0 auto;
 		    width: 56%;
 		}
@@ -97,6 +105,14 @@
 		.centro{
 			text-align: center;
 		}
+
+		.backdrop {
+  			 position: absolute;
+  			 width: 100vw;
+  			 height: 65%;
+  			 background-color: #FFD400;
+  		}
+
 	}		
 
 	/* MOBILE */
@@ -109,4 +125,11 @@
 		.section-icon{
 			max-width: 95px;
 		}
+
+		.backdrop {
+  			 position: absolute;
+  			 width: 100vw;
+  			 height: 75%;
+  			 background-color: #FFD400;
+  		}
 	}
