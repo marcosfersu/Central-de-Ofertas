@@ -45,6 +45,14 @@ $(document).ready(function(){
 
 	});
 
+	$(".bottomVideo").click(function(){
+		alert( "Handler for called." );
+	});
+	
+});
+
+
+
     // var aboutEl = $('.image');
     // var aboutElOffset = aboutEl.offset().top/1.1;
     // var documentEl = $(document);
@@ -52,9 +60,6 @@ $(document).ready(function(){
     //     if( documentEl.scrollTop() > aboutElOffset && aboutEl.hasClass('hidden')){
     //     aboutEl.removeClass("hidden")}
     // });
-});
-
-
 
 
 // animate - section1
