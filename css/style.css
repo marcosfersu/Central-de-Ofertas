@@ -317,6 +317,9 @@ body {
     top: 50%;
     transform: translateY(-50%);
     float: left;
+}
+
+#section0 .row{    
     left: -700px;
 }
 
@@ -332,23 +335,30 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-display: none;
 }
 
 .bottomVideo{
     max-width: 10%;
-    display: inline-block;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     margin: 0 auto;
     cursor: pointer;
+    display: none;
 }
 
-.section div .videoLeft{
+#section0 div .videoLeft{
     left: 0;
 }
 
-.section div .videoRight{
+#section0 div .videoRight{
     left: 0;
+}
+
+.hidden5{
+    opacity: 0
+}
+
+#section0 .none{
+    display: inline-block;
 }

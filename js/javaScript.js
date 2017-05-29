@@ -48,6 +48,9 @@ $(document).ready(function(){
 	$(".bottomVideo").click(function(){
 			$(".row").removeClass("videoLeft");
 			$(".image").removeClass("videoRight");
+			$(".video").removeClass("hidden5");
+			$(".video").append('<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HIAMc5pHxcA?rel=0&autoplay=1&amp;controls=0&amp;showinfo=0?ecver=1" frameborder="0" allowfullscreen></iframe>');
+			$(".bottomVideo").removeClass("none");
 	});
 
 });
