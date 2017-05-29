@@ -1,70 +1,20 @@
+/* Body ---------------------------------------------------------------------------------------------------------------- */
+
 body {
-	font-family: 'PT Sans', sans-serif;
-	color: #2E2C33;
+    font-family: 'PT Sans', sans-serif;
+    color: #2E2C33;
 }
 
 .section {
-	background-position: center;
+    background-position: center;
 }
 
-#section0 {
-    background-image: url(../imgs/bg1.jpg);
-}
 
-#section0 .container {
-	height: 100%;
-}
 
-#section0 .playstore {
-	margin-top: 40px;
-}
+/* Section ------------------------------------------------------------------------------------------------------------- */
 
-#section0 .section-title {
-	margin-top: 40px;
-}
-
-#section0 .container:before, #section0 .container:after{
-	content: '';
-	display: inline-block;
-	width: 100%;
-	text-align: justify;
-}
-
-#section1 {
-    background-image: url(../imgs/bg2.jpg);
-}
-
-#section2 {
-    background-image: url(../imgs/bg3.jpg);
-}
-
-#section2 .row{
-	left: auto;
-	right: 0;
-    float: right;
-	text-align: right;
-}
-
-#section2 .playstore,#section2 .section-icon{
-	float: right;
-}
-
-#section2 .section-title {
-	clear: both;
-}
-
-#section3 {
-    background-image: url(../imgs/bg4.jpg);
-}
-
-#section4 {
-    background-image: url(../imgs/bg5.jpg);
-}
-
-#section4 .playstore{
-    float: none;
-    margin: 0;
-    width: 200px;
+.section {
+    background-position: center;
 }
 
 .section {
@@ -73,23 +23,8 @@ body {
     background-size: cover;
 }
 
-.co-tableCell .tuvieja{
-    vertical-align: middle;
-}
-
-.container {
-	height: 100%;
-	max-width: 85%;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-    text-align: center;
-}
-
 .section .row {
-	text-align: left;
+    text-align: left;
 }
 
 .section .row {
@@ -101,8 +36,15 @@ body {
     animation-delay: 2s;   
 }
 
-.mbottom-20 re    width: 80%;
-    margin: 0 auto;
+.container {
+    height: 100%;
+    max-width: 85%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    text-align: center;
 }
 
 .text { 
@@ -112,21 +54,85 @@ body {
 }
  
 .image {
-   	display: inline-block;
-   	vertical-align: top;
+    display: inline-block;
+    vertical-align: top;
     float: right;
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     left: 700px;
 }
 
-.hidden1{
-    opacity: 0;
-    margin-left: 10%;
+.playstore {
+    width: 200px;
+    display: inline-block;
+    float: left;
+    margin-top: 20px;
 }
 
-.hidden2{
+.section-title {
+    font-size: 54px;
+    font-weight: 900;
+    line-height: 55px;
+}
+
+.section-title .internal{
+    font-size: 40px;
+    line-height: 43px;
+}
+
+.section-text {
+    font-weight: 700;
+    font-size: 17px;
+    margin-top: 20px;
+
+}
+
+.backdrop{
+    position: absolute;
+    width: 40%;
+    height: 100vh;
+    background-color: white; 
+}
+
+.section .row {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 680px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
+}
+
+
+
+/* Section0 ------------------------------------------------------------------------------------------------------------- */
+
+#section0 {
+    background-image: url(../imgs/bg1.jpg);
+}
+
+#section0 .container {
+    height: 100%;
+}
+
+#section0 .playstore {
+    margin-top: 40px;
+}
+
+#section0 .section-title {
+    margin-top: 40px;
+}
+
+#section0 .container:before, #section0 .container:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    text-align: justify;
+}
+
+.hidden1{
     opacity: 0;
     margin-left: 10%;
 }
@@ -136,11 +142,122 @@ body {
     opacity: 0;
 }
 
+.hidden5{
+    opacity: 0
+}
+
+#section0 .row{    
+    left: -700px;
+}
+
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+
+.bottomVideo{
+    max-width: 10%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    cursor: pointer;
+    display: none;
+}
+
+#section0 .none{
+    display: inline-block;
+}
+
+#section0 div .videoLeft{
+    left: 0;
+}
+
+#section0 div .videoRight{
+    left: 0;
+}
+
+
+
+/* Section1 ----------------------------------------------------------------------------------------------------------- */
+
+#section1 {
+    background-image: url(../imgs/bg2.jpg);
+}
+
+.hidden2{
+    opacity: 0;
+    margin-left: 10%;
+}
+
+.section-icon {
+    max-width: 200px;
+}
+
+
+
+/* Section2 ------------------------------------------------------------------------------------------------------------ */
+
+#section2{
+    background-image: url(../imgs/bg3.jpg);
+}
+
+#section2 .row{
+    left: auto;
+    right: 0;
+    float: right;
+    text-align: right;
+}
+
+#section2 .playstore,#section2 .section-icon{
+    float: right;
+}
+
+#section2 .section-title {
+    clear: both;
+}
+
+#flip {
+    right: 0;
+    background-color: white;
+}
+
+
+
+/* Section3 ---------------------------------------------------------------------------------------------------------- */
+
+#section3 {
+    background-image: url(../imgs/bg4.jpg);
+}
+
 .hidden4{
     opacity: 0;
     margin-left: 10%;
 }
 
+
+
+/* Section4 ---------------------------------------------------------------------------------------------------------- */
+
+#section4 {
+    background-image: url(../imgs/bg5.jpg);
+}
+
+#section4 .playstore{
+    float: none;
+    margin: 0;
+    width: 200px;
+}
+
+.mbottom-20 re    width: 80%;
+    margin: 0 auto;
+}
 
 .boton {
     display: inline-block;
@@ -153,19 +270,6 @@ body {
     line-height: 36px;
 }
 
-.rbottom {
-    width: 17%;
-    z-index: 2;
-    position: relative;
-}
-
-.Triangulo_rectangulo {
-    width: 0;
-    border-right: 100px solid transparent;
-    border-bottom: 100px solid #08B;
-    position: absolute;
-}
-
 .info {
     display: inline-block;
     vertical-align: middle;
@@ -174,31 +278,6 @@ body {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-}
-
-.playstore {
-	width: 200px;
-	display: inline-block;
-	float: left;
-	margin-top: 20px;
-}
-
-.section-title {
-    font-size: 54px;
-    font-weight: 900;
-    line-height: 55px;
-}
-
-.section-title .internal{
-	font-size: 40px;
-	line-height: 43px;
-}
-
-.section-text {
-    font-weight: 700;
-    font-size: 17px;
-    margin-top: 20px;
-
 }
 
 .closer-text{
@@ -214,63 +293,8 @@ body {
     font-size: 17px;
 }
 
-.alto {
-    margin-top: 350px;
-    margin-bottom: 50px;
-}
-
-.min h1 {
-    font-size: 3rem;
-}
-
-.min span {
-    font-size: 3.5rem;
-}
-
-// .backdrop {
-//     width: 0;
-//     height: 0;
-//     border-style: solid;
-//     border-width: 100vh 0 0 100vw;
-//     border-color: transparent transparent transparent #FFD400;
-//     position: absolute;
-//     left: 0px;
-//     bottom: 0px;
-//     opacity: 0.7;
-//     filter: alpha(opacity=70);
-// }
-.backdrop{
-    position: absolute;
-    width: 40%;
-    height: 100vh;
-    background-color: white; 
-}
-
-#flip {
-    right: 0;
-    background-color: white;
-}
-
-.fright {
-    float: right;
-    text-align: right;
-}
-
-.fleft {
-    float: left;
-    text-align: left;
-}
-
 .center {
     margin: 0 auto;
-}
-
-#botspace-80 {
-    margin-bottom: 80px;
-}
-
-#botspace-50 {
-    margin-bottom: 50px;
 }
 
 .email {
@@ -300,65 +324,20 @@ body {
     color: #FFD400;
 }
 
-#fp-nav ul,
-.fp-slidesNav ul {
-    opacity: 0.7;
-}
 
-#fp-nav ul li .fp-tooltip.right {
-    color: black;
-}
 
-.section .row {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 680px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    float: left;
-}
 
-#section0 .row{    
-    left: -700px;
-}
 
-.section-icon {
-	max-width: 200px;
-}
+
+
+
+
  
-.video iframe,
-.video object,
-.video embed {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
 
-.bottomVideo{
-    max-width: 10%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-    cursor: pointer;
-    display: none;
-}
 
-#section0 div .videoLeft{
-    left: 0;
-}
 
-#section0 div .videoRight{
-    left: 0;
-}
 
-.hidden5{
-    opacity: 0
-}
 
-#section0 .none{
-    display: inline-block;
-}
+
+
+
