@@ -72,39 +72,51 @@ $(document).ready(function(){
 
 });
 
-      var tag = document.createElement('script');
-
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
+    var tag = document.createElement('script')
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 
+		var player;
+	    function onYouTubeIframeAPIReady() {
+	        player = new YT.Player('player', {
+	       	height: '360',
+	        width: '640',
+	        videoId: 'HIAMc5pHxcA',
+	     playerVars: {
+            controls: 0,
+            disablekb: 1
+        },
+	        	events: {
+	            	'onReady': onPlayerReady,
+	            	'onStateChange': onPlayerStateChange
+	    	    }
+	  	    });
+	    }
 
-var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '360',
-          width: '640',
-          videoId: 'HIAMc5pHxcA',
-          events: {
-            'onReady': onPlayerReady,
-          }
-        });
-      }
 
+	    function onPlayerReady(event) {
+	        
+	        // bind events
+	        var playButton = document.getElementById("play-button");
+	        playButton.addEventListener("click", function() {
+	          player.playVideo();
+	        });
+	        
+	        var pauseButton = document.getElementById("pause-button");
+	        pauseButton.addEventListener("click", function() {
+	          player.pauseVideo();
+	        });
+	        
+	    }
 
-      function onPlayerReady(event) {
-        
-        // bind events
-        var playButton = document.getElementById("play-button");
-        playButton.addEventListener("click", function() {
-          player.playVideo();
-        });
-        
-        var pauseButton = document.getElementById("pause-button");
-        pauseButton.addEventListener("click", function() {
-          player.pauseVideo();
-        });
-        
-      }
+	          // when video ends
+	    function onPlayerStateChange(event) {        
+	        if(event.data === 0 || event.data === 2) {            
+				$(".video").addClass("hidden7");
+				$(".row").addClass("videoLeft");
+				$(".image").addClass("videoRight");
+				$(".bottomVideo").addClass("none");
+	        }
+	    }
