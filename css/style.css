@@ -164,6 +164,10 @@ body {
     z-index: 99;
 }
 
+.hidden7{
+    opacity: 0;
+}
+
 .bottomVideo{
     max-width: 10%;
     position: relative;
