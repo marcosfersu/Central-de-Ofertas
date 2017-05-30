@@ -1,7 +1,10 @@
-/* Body ---------------------------------------------------------------------------------------------------------------- */
+@font-face {
+    font-family: dinTextPro;
+    src: url(fonts/PFDinTextPro-Regular.ttf);
+}
 
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: dinTextPro, sans-serif;
     color: #2E2C33;
 }
 
