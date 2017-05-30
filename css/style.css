@@ -164,6 +164,17 @@ body {
     z-index: 99;
 }
 
+.close_buttom{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    z-index: 100;
+    position: absolute;
+    right: 0;
+    margin: 3%;
+    cursor: pointer;
+}
+
 .hidden7{
     opacity: 0;
 }
@@ -189,6 +200,7 @@ body {
 #section0 div .videoRight{
     left: 0;
 }
+
 
 
 
