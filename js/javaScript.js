@@ -14,11 +14,11 @@ $(document).ready(function(){
 		verticalCentered: false,
 
 		afterLoad: function(anchorLink, index){
-			var aboutEl = $('.row');
+			var aboutEl = $('#row0');
 			var aboutImg = $(".image")
 
 			if(index == 1){
-				aboutEl.removeClass("hidden1"),
+				aboutEl.removeClass("inactive_left"),
 				aboutImg.removeClass("hidden3");
 			}
 		},
@@ -59,12 +59,12 @@ $(document).ready(function(){
 // YouTube
 
 	$(".bottomVideo").click(function(){
-			$(".row").removeClass("videoLeft");
+			$(".row").removeClass("video_left");
 			$(".image").removeClass("videoRight");
 			$(".bottomVideo").removeClass("none");
 		setTimeout(function(){
 			$(".video").removeClass("hidden7");
-		}, 900)
+		}, 500)
 		
 //			$(".video").append('<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HIAMc5pHxcA?rel=0&autoplay=1&amp;controls=0&amp;showinfo=0?ecver=1" frameborder="0" allowfullscreen></iframe>');
 
@@ -115,8 +115,9 @@ $(document).ready(function(){
 	    function onPlayerStateChange(event) {        
 	        if(event.data === 0 || event.data === 2) {            
 				$(".video").addClass("hidden7");
-				$(".row").addClass("videoLeft");
+				$(".row").addClass("video_left");
 				$(".image").addClass("videoRight");
 				$(".bottomVideo").addClass("none");
 	        }
+
 	    }
