@@ -66,9 +66,10 @@ $(document).ready(function(){
 		setTimeout(function(){
 			$(".yt_close_button").removeClass("yt_close");  // move cross button
 			$("#row0").removeClass("yt_bottom");            // move playstore button
+		}, 600)
+		setTimeout(function(){
 			$(".yt_video").removeClass("inactive");         // appear yotube video
-		}, 500)
-		
+		}, 1200)
     });
 
 });
