@@ -45,33 +45,22 @@ $(document).ready(function(){
 
 	});
 
-	// 	$(".bottomVideo").click(function(){
-	// 			$(".row").removeClass("videoLeft");
-	// 			$(".image").removeClass("videoRight");
-	// 			$(".video").removeClass("hidden5");
-	// 			$(".video").append('<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HIAMc5pHxcA?rel=0&autoplay=1&amp;controls=0&amp;showinfo=0?ecver=1" frameborder="0" allowfullscreen></iframe>');
-	// 			$(".bottomVideo").removeClass("none");
-	// 	});
-
-	// });
-
 
 // YouTube
 
-	$(".bottomVideo").click(function(){
-			$(".text").removeClass("yt_left");
-			$("#celular_left").removeClass("yt_right2");
+	$(".yt_button").click(function(){
+			$(".text").removeClass("yt_left");              // move text
+			$("#celular_left").removeClass("yt_right2");    // move celular left
 		setTimeout(function(){
-			$("#celular_right").removeClass("yt_right1");
+			$("#celular_right").removeClass("yt_right1");   // move celular right
 		}, 200)
-			$(".bottomVideo").removeClass("none");
+			$(".yt_button").removeClass("disappear");       // disappear central button
 		setTimeout(function(){
-			$(".video").removeClass("hidden7");
-			$("#row0").removeClass("yt_bottom");
-		}, 1000)
+			$(".close_button").removeClass("yt_close");     // move cross button
+			$(".video").removeClass("hidden7");             // appear yotube video
+			$("#row0").removeClass("yt_bottom");            // move playstore button
+		}, 800)
 		
-//			$(".video").append('<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HIAMc5pHxcA?rel=0&autoplay=1&amp;controls=0&amp;showinfo=0?ecver=1" frameborder="0" allowfullscreen></iframe>');
-
     });
 
 });
@@ -100,16 +89,14 @@ $(document).ready(function(){
 	    }
 
 
-	    function onPlayerReady(event) {
+	    function onPlayerReady(event) {  //play and pause youtube video
 	        
 	        // bind events
-	        var playButton = document.getElementById("play-button");
-	        playButton.addEventListener("click", function() {
+	        $("#play_button").click(function(){
 	          player.playVideo();
 	        });
 	        
-	        var pauseButton = document.getElementById("pause-button");
-	        pauseButton.addEventListener("click", function() {
+	        $("#pause_button").click(function(){
 	          player.pauseVideo();
 	        });
 	        
@@ -124,8 +111,9 @@ $(document).ready(function(){
 				$("#celular_left").addClass("yt_right2");
 			}, 200)
 				$("#celular_right").addClass("yt_right1");
-				$(".bottomVideo").addClass("none");
+				$(".yt_button").addClass("disappear");
 				$("#row0").addClass("yt_bottom");
+				$(".close_button").addClass("yt_close");
 	        }
 
 	    }
