@@ -15,11 +15,17 @@ $(document).ready(function(){
 
 		afterLoad: function(anchorLink, index){
 			var aboutEl = $('#row0');
-			var aboutImg = $(".image")
+			var aboutImg = $("#celular_right");
+			var aboutImg2 = $("#celular_left");
 
 			if(index == 1){
 				aboutEl.removeClass("inactive_left"),
-				aboutImg.removeClass("inactive_right");
+				setTimeout(function(){
+					aboutImg.addClass("yt_right1");
+				}, 200)
+				setTimeout(function(){
+					aboutImg2.addClass("yt_right2");
+				}, 300)
 			}
 		},
 
@@ -49,18 +55,18 @@ $(document).ready(function(){
 // YouTube
 
 	$(".yt_button").click(function(){
-			$(".text").removeClass("yt_left");              // move text
 			$("#celular_left").removeClass("yt_right2");    // move celular left
 			$(".yt_button").addClass("disappear");          // disappear central button
+			$(".text").removeClass("yt_left");              // move text
 		setTimeout(function(){
 			$("#celular_right").removeClass("yt_right1");   // move celular right
 			$("#row0").removeClass("yt_bottom");            // move playstore button
 			$(".background").addClass("inactive")           // disappear background section1
+			$(".yt_close_button").removeClass("yt_close");  // move cross button
 		}, 200)
 		setTimeout(function(){
-			$(".yt_close_button").removeClass("yt_close");  // move cross button
 			$(".yt_video").removeClass("inactive");         // appear yotube video
-		}, 800)
+		}, 500)
 		
     });
 
@@ -107,7 +113,6 @@ $(document).ready(function(){
 	    function onPlayerStateChange(event) {        
 	        if(event.data === 0 || event.data === 2) {            
 				$(".yt_video").addClass("inactive");
-				$(".text").addClass("yt_left");
 				$("#celular_right").addClass("yt_right1");
 				$(".yt_button").addClass("disappear");
 				$("#row0").addClass("yt_bottom");
@@ -116,6 +121,9 @@ $(document).ready(function(){
 			setTimeout(function(){
 				$("#celular_left").addClass("yt_right2");
 			}, 200)
+			setTimeout(function(){
+				$(".text").addClass("yt_left");
+			}, 400)
 	        }
 
 	    }
