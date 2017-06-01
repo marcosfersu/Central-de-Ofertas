@@ -54,17 +54,18 @@ $(document).ready(function(){
 
 // YouTube
 
+
 	$(".yt_button").click(function(){
 			$("#celular_left").removeClass("yt_right2");    // move celular left
 			$(".yt_button").addClass("disappear");          // disappear central button
 			$(".text").removeClass("yt_left");              // move text
 		setTimeout(function(){
 			$("#celular_right").removeClass("yt_right1");   // move celular right
-			$("#row0").removeClass("yt_bottom");            // move playstore button
 			$(".background").addClass("inactive")           // disappear background section1
-			$(".yt_close_button").removeClass("yt_close");  // move cross button
 		}, 200)
 		setTimeout(function(){
+			$(".yt_close_button").removeClass("yt_close");  // move cross button
+			$("#row0").removeClass("yt_bottom");            // move playstore button
 			$(".yt_video").removeClass("inactive");         // appear yotube video
 		}, 500)
 		
@@ -86,7 +87,8 @@ $(document).ready(function(){
 	        videoId: 'HIAMc5pHxcA',
 	     playerVars: {
             controls: 0,
-            disablekb: 1
+            disablekb: 1,
+            rel: 0
         },
 	        	events: {
 	            	'onReady': onPlayerReady,
@@ -98,9 +100,21 @@ $(document).ready(function(){
 
 	    function onPlayerReady(event) {  //play and pause youtube video
 	        
+			var firts = 1;
 	        // bind events
 	        $("#play_button").click(function(){
-	          player.playVideo();
+	        
+	        if(firts == 1){
+	        	player.playVideo();
+	        	firts = 0;
+	        }
+
+	        if (firts == 0) {
+				setTimeout(function(){
+	        		player.playVideo();
+				}, 700)
+			}
+
 	        });
 	        
 	        $("#pause_button").click(function(){
