@@ -30,6 +30,8 @@ body {
     text-align: left;
 }
 
+/* Animate */
+
 .section .row {
     transition: all 1.5s ease;
 }
@@ -47,9 +49,15 @@ body {
     transition: all 1.5s ease;  
 }
 
-.section .close_button{
+.section .yt_close_button{
     transition: all 1.5s ease; 
 }
+
+.section .background{
+    transition: all 1.5s ease; 
+}
+
+/* common elements */
 
 .container {
     height: 100%;
@@ -62,28 +70,22 @@ body {
     text-align: center;
 }
 
+.section .row {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 680px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
+    left: 0;
+}
+
 .text { 
     position: relative;
     margin-left: 20px;
 }
  
-.image {
-    display: inline-block;
-    vertical-align: middle;
-    float: right;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-}
-
-.playstore {
-    width: 200px;
-    display: inline-block;
-    float: left;
-    margin-top: 20px;
-}
-
 .section_title {
     font-size: 54px;
     font-weight: 900;
@@ -102,6 +104,23 @@ body {
 
 }
 
+.image {
+    display: inline-block;
+    vertical-align: middle;
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.playstore {
+    width: 200px;
+    display: inline-block;
+    float: left;
+    margin-top: 20px;
+}
+
 .backdrop{
     position: absolute;
     width: 40%;
@@ -109,23 +128,39 @@ body {
     background-color: white; 
 }
 
-.section .row {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 680px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    float: left;
-    left: 0;
+/* Transitions */
+
+.inactive{
+    opacity: 0;
 }
+
+.disappear{
+    display: none;
+}
+
+
+
+
 
 
 
 /* Section0 ------------------------------------------------------------------------------------------------------------- */
 
 #section0 {
+    background-color: #000000;
+}
+
+.background{
     background-image: url(../imgs/bg1.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+#bg .inactive{
+    opacity: 0;
 }
 
 #section0 .container {
@@ -147,29 +182,36 @@ body {
     text-align: justify;
 }
 
-#section0 .row{
-    z-index: 100;
-}
-
-#section0 div .inactive_left{
-    opacity: 0;
-    left: 100px;
-}
-
-#section0 div .yt_left{
-    right: 0;
-}
-
-#row0{
-    transform: translateY(-5%);
-}
-
 #section0 .text{
     right: 700px;
 }
 
-#section0 div .yt_bottom{
-    transform: translateY(-50%);
+#row0{
+    z-index: 100;
+    transform: translateY(-5%);
+}
+
+.celular{
+    vertical-align: middle;
+    position: relative;
+}
+
+#celular_right{
+    max-width: 285px;
+    left: 130%;
+}
+
+#celular_left{
+    left: 90%;
+    max-width: 243px;
+    z-index: -1;
+}
+
+/* Transitions */
+
+#section0 div .inactive_left{
+    opacity: 0;
+    left: 100px;
 }
 
 #section0 div .inactive_right{
@@ -177,13 +219,21 @@ body {
     right: 100px;
 }
 
-.hidden5{
-    opacity: 0
+
+/* Youtube video */
+
+#section0 div .yt_left{
+    right: 0;
 }
 
-.video iframe,
-.video object,
-.video embed {
+
+#section0 div .yt_bottom{
+    transform: translateY(-50%);
+}
+
+.yt_video iframe,
+.yt_video object,
+.yt_video embed {
     position: absolute;
     top: 0;
     left: 0;
@@ -192,7 +242,7 @@ body {
     z-index: 99;
 }
 
-.close_button{
+.yt_close_button{
     z-index: 100;
     position: absolute;
     right: 4%;
@@ -206,10 +256,6 @@ div .yt_close{
     bottom: -13%;
 }
 
-.hidden7{
-    opacity: 0;
-}
-
 .yt_button{
     max-width: 10%;
     position: relative;
@@ -217,13 +263,8 @@ div .yt_close{
     transform: translateY(-50%);
     margin: 0 auto;
     cursor: pointer;
-    display: none;
-}
-
-#section0 .disappear{
     display: inline-block;
 }
-
 
 #section0 div .yt_right1{
     left: 1%;
@@ -233,22 +274,6 @@ div .yt_close{
     left: -21%;
 }
 
-.celular{
-    vertical-align: middle;
-    position: relative;
-}
-
-
-#celular_right{
-    max-width: 285px;
-    left: 130%;
-}
-
-#celular_left{
-    left: 90%;
-    max-width: 243px;
-    z-index: -1;
-}
 
 
 
@@ -259,12 +284,14 @@ div .yt_close{
     background-image: url(../imgs/bg2.jpg);
 }
 
-.hidden2{
+/* Transitions */
+
+#section1 div .inactive_left{
     opacity: 0;
-    margin-left: 10%;
+    left: 100px;
 }
 
-.section-icon {
+.section_icon {
     max-width: 200px;
 }
 
@@ -283,7 +310,7 @@ div .yt_close{
     text-align: right;
 }
 
-#section2 .playstore,#section2 .section-icon{
+#section2 .playstore,#section2 .section_icon{
     float: right;
 }
 
