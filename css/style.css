@@ -39,6 +39,14 @@ body {
     animation-delay: 2s;   
 }
 
+.celular{
+    transition: all 1.5s ease;
+}
+
+.section .text{
+    transition: all 1.5s ease;  
+}
+
 .container {
     height: 100%;
     max-width: 85%;
@@ -52,7 +60,6 @@ body {
 
 .text { 
     position: relative;
-    z-index: 2;
     margin-left: 20px;
 }
  
@@ -63,8 +70,7 @@ body {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    left: 700px;
-
+    right: 0;
 }
 
 .playstore {
@@ -74,18 +80,18 @@ body {
     margin-top: 20px;
 }
 
-.section-title {
+.section_title {
     font-size: 54px;
     font-weight: 900;
     line-height: 55px;
 }
 
-.section-title .internal{
+.section_title .internal{
     font-size: 40px;
     line-height: 43px;
 }
 
-.section-text {
+.section_text {
     font-weight: 700;
     font-size: 17px;
     margin-top: 20px;
@@ -107,12 +113,9 @@ body {
     top: 50%;
     transform: translateY(-50%);
     float: left;
+    left: 0;
 }
 
-.inactive_left{
-    opacity: 0;
-    margin-left: 10%;
-}
 
 
 /* Section0 ------------------------------------------------------------------------------------------------------------- */
@@ -129,7 +132,7 @@ body {
     margin-top: 40px;
 }
 
-#section0 .section-title {
+#section0 .section_title {
     margin-top: 40px;
 }
 
@@ -140,18 +143,38 @@ body {
     text-align: justify;
 }
 
+#section0 .row{
+    z-index: 100;
+}
 
-.hidden3{
-    margin-right: 10%;
+#section0 div .inactive_left{
     opacity: 0;
+    left: 100px;
+}
+
+#section0 div .yt_left{
+    right: 0;
+}
+
+#row0{
+    transform: translateY(-5%);
+}
+
+#section0 .text{
+    right: 700px;
+}
+
+#section0 div .yt_bottom{
+    transform: translateY(-50%);
+}
+
+#section0 div .inactive_right{
+    opacity: 0;
+    right: 100px;
 }
 
 .hidden5{
     opacity: 0
-}
-
-#section0 .row{    
-    left: -700px;
 }
 
 .video iframe,
@@ -194,24 +217,29 @@ body {
     display: inline-block;
 }
 
-#section0 div .video_left{
-    left: 0;
+
+#section0 div .yt_right1{
+    left: 1%;
 }
 
-#section0 div .videoRight{
-    left: 0;
+#section0 div .yt_right2{
+    left: -21%;
 }
+
+.celular{
+    vertical-align: middle;
+    position: relative;
+}
+
 
 #celular_right{
-    max-width: 60%;
+    max-width: 285px;
+    left: 130%;
 }
 
 #celular_left{
-    max-width: 54%;
-    position: absolute;
-    left: 48%;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 90%;
+    max-width: 243px;
     z-index: -1;
 }
 
@@ -252,7 +280,7 @@ body {
     float: right;
 }
 
-#section2 .section-title {
+#section2 .section_title {
     clear: both;
 }
 
