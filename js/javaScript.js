@@ -6,11 +6,12 @@ $(document).ready(function(){
 	});
 
     $('#fullpage').fullpage({
-		sectionsColor: ['black', '#1BBC9B', '#7E8F7C'],
+		sectionsColor: ['white', 'white', 'white', 'white', 'white'],
 		scrollBar: false,
 		navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['Somos más', 'Unite gratis', 'Sumate', 'Recibí', 'Mail',],
+                anchors:['somosMas', 'unite', 'sumate', 'recibi', 'contacto'],
+		navigationTooltips: ['Somos más', 'Unite gratis', 'Sumate', 'Recibí', 'Mail'],
 		verticalCentered: false,
 
 		afterLoad: function(anchorLink, index){

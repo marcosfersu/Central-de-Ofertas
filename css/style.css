@@ -85,7 +85,7 @@ body {
     position: relative;
     margin-left: 20px;
 }
- 
+
 .section_title {
     font-size: 54px;
     font-weight: 900;
@@ -151,7 +151,7 @@ body {
 }
 
 .background{
-    background-image: url(../imgs/bg1.jpg);
+    background-image: url(../imgs/resized/bg1.jpg);
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -202,9 +202,10 @@ body {
 }
 
 #celular_left{
-    left: 90%;
+    vertical-align: bottom;
+    left: 120%;
     max-width: 243px;
-    z-index: -1;
+    z-index: 1;
 }
 
 /* Transitions */
@@ -227,7 +228,7 @@ body {
 }
 
 
-#section0 div .yt_bottom{
+#section0 div .yt_bottom {
     transform: translateY(-50%);
 }
 
@@ -257,20 +258,21 @@ div .yt_close{
 
 .yt_button{
     max-width: 10%;
-    position: relative;
+    position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin: 0 auto;
     cursor: pointer;
-    display: inline-block;
+    display: block;
 }
 
 #section0 div .yt_right1{
-    left: 1%;
+    left: 25%;
 }
 
 #section0 div .yt_right2{
-    left: -21%;
+    left: 0;
 }
 
 
@@ -349,7 +351,8 @@ div .yt_close{
     width: 200px;
 }
 
-.mbottom-20 re    width: 80%;
+.mbottom-20 re {
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -426,7 +429,7 @@ div .yt_close{
 
 
 
- 
+
 
 
 
