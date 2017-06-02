@@ -10,7 +10,7 @@ $(document).ready(function(){
 		scrollBar: false,
 		navigation: true,
 		navigationPosition: 'right',
-                anchors:['somosMas', 'unite', 'sumate', 'recibi', 'contacto'],
+                //anchors:['somosMas', 'unite', 'sumate', 'recibi', 'contacto'],
 		navigationTooltips: ['Somos más', 'Unite gratis', 'Sumate', 'Recibí', 'Mail'],
 		verticalCentered: false,
 
