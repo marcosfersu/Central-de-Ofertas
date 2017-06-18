@@ -20,7 +20,7 @@ $(document).ready(function(){
 			var aboutImg2 = $("#celular_left");
 
 			if(index == 1){
-				aboutEl.removeClass("inactive_left"),
+				aboutEl.removeClass("inactive_left "),
 				setTimeout(function(){
 					aboutImg.addClass("yt_right1");
 				}, 200)
@@ -33,11 +33,18 @@ $(document).ready(function(){
 		onLeave: function(index, nextIndex, direction){
 			var leavingSection = $(this);
 			var aboutEl = $('.row');
+			var aboutPlaystore = $(".playstore");
+			var aboutText = $(".section_text");
+			var aboutTitle = $(".section_title");
+			var aboutCircle = $(".section_icon");
 
 			// after leaving section 2
 			if(index == 1 && direction =='down'){
-				aboutEl.removeClass("inactive_left");
-			}
+				aboutPlaystore.removeClass("inactive_left"),
+				aboutText.removeClass("transition"),
+				aboutTitle.removeClass("movement_left"),
+				aboutCircle.removeClass("increase");
+				}
 
 			// after leaving section 3
 			if(index == 2 && direction =='down'){

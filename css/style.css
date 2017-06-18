@@ -57,6 +57,22 @@ body {
     transition: all 1.5s ease; 
 }
 
+#section1 .playstore{
+    transition: all 1.5s ease;    
+}
+
+.section .section_text{
+    transition: all 1.5s ease;  
+}
+
+.section .section_title{
+    transition: all 1.5s ease;
+}
+
+.section .section_icon{
+    transition: all 1.5s ease;    
+}
+
 /* common elements */
 
 .container {
@@ -90,6 +106,7 @@ body {
     font-size: 54px;
     font-weight: 900;
     line-height: 55px;
+    text-align: center;
 }
 
 .section_title .internal{
@@ -117,8 +134,10 @@ body {
 .playstore {
     width: 200px;
     display: inline-block;
-    float: left;
+    float: right;
     margin-top: 20px;
+    position: relative;
+    left: 0;
 }
 
 .backdrop{
@@ -134,12 +153,22 @@ body {
     opacity: 0;
 }
 
+.inactive_left{
+    opacity: 0;
+    left: 300px;
+}
+
 .disappear{
     display: none;
 }
 
+.movement_left{
+    left: -200%;
+}
 
-
+.increase{
+    max-width: 50px;
+}
 
 
 
@@ -285,15 +314,28 @@ div .yt_close{
     background-image: url(../imgs/bg2.jpg);
 }
 
-/* Transitions */
-
-#section1 div .inactive_left{
-    opacity: 0;
-    left: 100px;
+.section_title{
+    position: relative;
+    left: 0;
 }
+
+/* Transitions */
 
 .section_icon {
     max-width: 200px;
+    margin: 0 auto;
+}
+
+.section .transition{
+    font-size: 30%;
+}
+
+#section1 .movement_left{
+    left: -200%;
+}
+
+#section1 .increase{
+    max-width: 50px;
 }
 
 
