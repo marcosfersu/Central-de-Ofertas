@@ -32,28 +32,47 @@ $(document).ready(function(){
 
 		onLeave: function(index, nextIndex, direction){
 			var leavingSection = $(this);
-			var aboutEl = $('.row');
-			var aboutPlaystore = $(".playstore");
-			var aboutText = $(".section_text");
-			var aboutTitle = $(".section_title");
-			var aboutCircle = $(".section_icon");
+			var aboutPlaystore1 = $("#playstore1");
+			var aboutText1 = $("#section_text1");
+			var aboutTitle1 = $("#section_title1");
+			var aboutCircle1 = $("#section_icon1");
+
+			var aboutPlaystore2 = $("#playstore2");
+			var aboutText2 = $("#section_text2");
+			var aboutTitle2 = $("#section_title2");
+			var aboutCircle2 = $("#section_icon2");
+
+			var aboutPlaystore3 = $("#playstore3");
+			var aboutText3 = $("#section_text3");
+			var aboutTitle3 = $("#section_title3");
+			var aboutCircle3 = $("#section_icon3");
 
 			// after leaving section 2
 			if(index == 1 && direction =='down'){
-				aboutPlaystore.removeClass("inactive_left"),
-				aboutText.removeClass("transition"),
-				aboutTitle.removeClass("movement_left"),
-				aboutCircle.removeClass("increase");
-				}
+				// setTimeout(function(){
+					aboutPlaystore1.removeClass("inactive_left");
+				// }, 10)
+				aboutText1.removeClass("transition"),
+				aboutTitle1.removeClass("movement_left"),
+				aboutCircle1.removeClass("increase");
+			}
 
 			// after leaving section 3
 			if(index == 2 && direction =='down'){
-				aboutEl.removeClass("hidden3");
+				aboutPlaystore2.removeClass("inactive_right"),
+				aboutText2.removeClass("transition"),
+				aboutTitle2.removeClass("movement_left"),
+				aboutCircle2.removeClass("increase");
 			}
 
 			// after leaving section 4
 			if(index == 3 && direction =='down'){
-				aboutEl.removeClass("hidden4");
+				// setTimeout(function(){
+					aboutPlaystore3.removeClass("inactive_left");
+				// }, 10)
+				aboutText3.removeClass("transition"),
+				aboutTitle3.removeClass("movement_left"),
+				aboutCircle3.removeClass("increase");
 			}
 		}
 
