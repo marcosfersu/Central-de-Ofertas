@@ -209,10 +209,24 @@
 			max-width: 95px;
 		}
 
-		.backdrop {
-  			 position: absolute;
-  			 width: 100vw;
-  			 height: 75%;
-  			 background-color: #FFD400;
-  		}
+		#section0 div .yt_bottom {
+    		width: 100%;
+		}
+
+		.yt_close_button {
+		    right: 44%;
+		    bottom: 13%;
+		    width: 9%;
+		}	
+		#section0 div .yt_bottom {
+    		transform: translateY(40%);
+		}
+
+		#section0 div .yt_right1{
+			display: none;
+		}
+
+		#section0 div .yt_right2{
+			display: none;
+		}
 	}
