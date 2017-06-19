@@ -103,7 +103,7 @@ body {
 }
 
 .section_title {
-    font-size: 54px;
+    font-size: 47px;
     font-weight: 900;
     line-height: 55px;
     text-align: center;
@@ -145,6 +145,7 @@ body {
     width: 40%;
     height: 100vh;
     background-color: white; 
+    min-width: 576px;
 }
 
 /* Transitions */
@@ -208,6 +209,7 @@ body {
 
 #section0 .section_title {
     margin-top: 40px;
+    text-align: left;
 }
 
 #section0 .container:before, #section0 .container:after{
@@ -232,14 +234,14 @@ body {
 }
 
 #celular_right{
-    max-width: 285px;
+    max-width: 214px;
     left: 130%;
 }
 
 #celular_left{
     vertical-align: bottom;
     left: 120%;
-    max-width: 243px;
+    max-width: 191px;
     z-index: 1;
 }
 
@@ -356,16 +358,21 @@ div .yt_close{
     left: auto;
     right: 0;
     float: right;
-    text-align: right;
+    text-align: left;
 }
 
 #section2 .section_title{
     position: relative;
     left: 0;
+    font-size: 47px;
 }
 
 #section2 .section_title {
     clear: both;
+}
+
+#section2 .section_text{
+    font-size: 15px
 }
 
 #flip {

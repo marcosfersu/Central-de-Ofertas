@@ -3,12 +3,20 @@
 	/* LAPTOP */
 	@media screen and (max-width: 1024px){
 		
-		.section-title  { 
-			font-size: 36px;
-			line-height: 45px;
+		.section_title  { 
+			font-size: 30px;
+    		line-height: 35px;
 		}
 
-		#section0 .section-title {
+		#section0 .section_text{
+			text-align: left;
+		}
+
+		#section2 .section_title{
+		    font-size: 30px;	
+		}
+
+		#section0 .section_title {
 	    	margin-top: 18px;
 		}
 
@@ -16,18 +24,24 @@
 			margin-left: 0;
 		}
 
-		.image { max-height: 300px; }
+		.image { 
+			max-height: 300px; 
+		}
 
-		.section .row { width: 58%; }
+		.section .row {
+			width: 58%; 
+		}
 
-		.section-text { font-size: 17px; }
+		.section_text { 
+			font-size: 17px;
+			text-align: center; 
+		}
 
-		.logo-center {
+		.logo_center {
 		    width: 33%;
 		}
 
-		.section-icon {
-    		max-width: 110px;
+		.section_icon {
     		margin-bottom: 5%;
 		}
 
@@ -35,9 +49,34 @@
 			width: 45%;
 		}
 		
-		#info-back{
+		#info_back{
 			width: 67%;
-		}	
+		}
+
+		.backdrop {
+		    position: absolute;
+		    width: 50%;
+		    height: 100vh;
+		    background-color: white;
+		    min-width: 369px;
+  		}	
+
+  		.logo_centro{
+  		    max-width: 67%;	
+  		}
+
+		#celular_left {
+		    max-width: 137px;
+		}
+
+		#celular_right {
+		    max-width: 152px;
+		}
+
+		.yt_close_button {
+			bottom: 7%;
+		}		
+
 	}
 
 
@@ -45,12 +84,14 @@
 	/* TABLET */
 	@media screen and (max-width: 768px){
 		
-		.section-title  { 
+		#section0 .section_title { 
 			font-size: 34px;
+			text-align: center;
+	    	margin-top: 28px;
 		}
 
-		#section0 .section-title {
-	    	margin-top: 28px;
+		#section0 .section_text { 
+			text-align: center;
 		}
 
 		.playstore {
@@ -65,15 +106,6 @@
 		    transform: translateY(0);
 		    display: block;
 		    float: none;
-		}
-
-		.section .row {
-			width: 100%;
-		    margin-top: 14%;
-		    top: 0;
-		    transform: translateY(0);
-		    float: none;
-		    text-align: center;
 		}
 
 		.logo-center {
@@ -109,8 +141,26 @@
 		.backdrop {
   			 position: absolute;
   			 width: 100vw;
-  			 height: 65%;
+  			 height: 40%;
   			 background-color: #FFD400;
+  			 min-width: 400px;
+  		}
+
+  		#section0 div .yt_bottom {
+  			width: 100%;
+    		margin-top: 39%;
+    		top: 0;
+    		transform: translateY(0);
+    		float: none;
+    		text-align: center;
+  		}
+
+  		#section0 .playstore{
+  			float: none;
+  		}
+
+  		.yt_button{
+  			top: 10%;
   		}
 
 	}		
