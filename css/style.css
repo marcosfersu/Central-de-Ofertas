@@ -62,15 +62,18 @@ body {
 }
 
 .section .section_text{
-    transition: all 1.5s ease;  
+    transition: all 1.5s ease; 
+    transition-delay: 1000ms;  
 }
 
 .section .section_title{
-    transition: all 1.5s ease;
+    transition: all 1s ease-out;
+    transition-delay: 500ms;
 }
 
 .section .section_icon{
-    transition: all 1.5s ease;    
+    transition: all 1.5s ease;
+    transition-delay: 1700ms;    
 }
 
 /* common elements */
@@ -138,6 +141,7 @@ body {
     margin-top: 20px;
     position: relative;
     left: 0;
+    transform: translateX(0);
 }
 
 .backdrop{
@@ -148,20 +152,19 @@ body {
     min-width: 576px;
 }
 
+.section .section_text{
+    transform: scaleY(1); 
+}
+
 /* Transitions */
 
 .inactive{
     opacity: 0;
 }
 
-.inactive_left{
-    opacity: 0;
-    left: 300px;
-}
-
 .inactive_right{
     opacity: 0;
-    left: -300px;
+    transform: translateX(-200%);
 }
 
 .disappear{
@@ -169,13 +172,16 @@ body {
 }
 
 .movement_left{
-    left: -200%;
+    transform: translateX(200%);
 }
 
 .increase{
-    max-width: 50px;
+    transform: scaleY(0);
 }
 
+.section .transition{
+    transform: scaleY(0);
+}
 
 
 
@@ -330,20 +336,21 @@ div .yt_close{
 /* Transitions */
 
 .section_icon {
-    max-width: 200px;
     margin: 0 auto;
-}
-
-.section .transition{
-    font-size: 30%;
+    transform: scale(1)
 }
 
 #section1 .movement_left{
-    left: -200%;
+    transform: translateX(-200%);
 }
 
 #section1 .increase{
-    max-width: 50px;
+    transform: scale(.01)
+}
+
+.inactive_left{
+    opacity: 0;
+    transform: translateX(200%);
 }
 
 
@@ -380,16 +387,12 @@ div .yt_close{
     background-color: white;
 }
 
-.section .transition{
-    font-size: 30%;
-}
-
 #section2 .movement_left{
-    left: 200%;
+    transform: translateX(200%);
 }
 
 #section2 .increase{
-    max-width: 50px;
+    transform: scale(.01)
 }
 
 #playstore2{
@@ -414,16 +417,12 @@ div .yt_close{
     margin: 0 auto;
 }
 
-.section .transition{
-    font-size: 30%;
-}
-
 #section3 .movement_left{
-    left: -200%;
+    transform: translateX(-200%);
 }
 
 #section3 .increase{
-    max-width: 50px;
+    transform: scale(.01)
 }
 
 
