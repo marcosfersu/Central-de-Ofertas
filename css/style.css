@@ -289,7 +289,7 @@ body {
 .yt_close_button{
     z-index: 100;
     position: absolute;
-    right: 49%;
+    right: 50%;
     bottom: 2%;
     cursor: pointer;
     width: 4%;

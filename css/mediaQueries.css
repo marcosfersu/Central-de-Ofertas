@@ -142,14 +142,11 @@
 
 		.backdrop {
 		    position: absolute;
-		    width: 100vw;
-		    height: 100%;
+		    width: 100%;
+		    height: 56%;
 		    background-color: #fff;
 		    min-width: 400px;
-		}
-
-		#section2 .backdrop{
-			background-color: #FFF2BA;
+		    bottom: 0%;
 		}
 
 		#section0 div .yt_bottom {
@@ -166,7 +163,7 @@
   		}
 
   		.yt_button{
-  			top: 10%;
+			top: 90%;
   		}
 
   		#section0 div .yt_right1 {
@@ -191,10 +188,17 @@
 
 		.section .row {
 			width: 100%;
+			transform: translateY(-30%)
 		}
 
 		#playstore2 {
     		float: none;
+		}
+
+		#section1{
+		    background-size: 100%;
+		    background-repeat: no-repeat;
+		    background-position: top;
 		}
 	}		
 
@@ -219,7 +223,7 @@
 		    width: 9%;
 		}	
 		#section0 div .yt_bottom {
-    		transform: translateY(40%);
+    		transform: translateY(20%);
 		}
 
 		#section0 div .yt_right1{
@@ -229,4 +233,17 @@
 		#section0 div .yt_right2{
 			display: none;
 		}
+
+		.section .row {
+			transform: translateY(-50%)
+		}
+
+		.backdrop{
+		    height: 67%;
+		}
+
+		.text{
+			margin-left: 0;
+		}
 	}
+
