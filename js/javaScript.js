@@ -20,13 +20,14 @@ $(document).ready(function(){
 			var aboutImg2 = $("#celular_left");
 
 			if(index == 1){
-				aboutEl.removeClass("inactive_left "),
+				aboutEl.removeClass("inactive_left ");
 				setTimeout(function(){
-					aboutImg.addClass("yt_right1");
-				}, 200)
+					aboutImg.removeClass("yt_right1");
+				}, 200);
 				setTimeout(function(){
-					aboutImg2.addClass("yt_right2");
-				}, 300)
+                                        $('a.playstore').removeClass('inactive_bottom');
+					aboutImg2.removeClass("yt_right2");
+				}, 300);
 			}
 		},
 
@@ -83,11 +84,11 @@ $(document).ready(function(){
 
 
 	$(".yt_button").click(function(){
-			$("#celular_left").removeClass("yt_right2");    // move celular left
+			$("#celular_left").addClass("yt_right2");    // move celular left
 			$(".yt_button").addClass("disappear");          // disappear central button
 			$(".text").removeClass("yt_left");              // move text
 		setTimeout(function(){
-			$("#celular_right").removeClass("yt_right1");   // move celular right
+			$("#celular_right").addClass("yt_right1");   // move celular right
 			$(".background").addClass("inactive")           // disappear background section1
 		}, 200)
 		setTimeout(function(){
@@ -155,13 +156,13 @@ $(document).ready(function(){
 	    function onPlayerStateChange(event) {        
 	        if(event.data === 0 || event.data === 2) {            
 				$(".yt_video").addClass("inactive");
-				$("#celular_right").addClass("yt_right1");
+				$("#celular_right").removeClass("yt_right1");
 				$(".yt_button").addClass("disappear");
 				$("#row0").addClass("yt_bottom");
 				$(".yt_close_button").addClass("yt_close");
 				$(".background").removeClass("inactive")
 			setTimeout(function(){
-				$("#celular_left").addClass("yt_right2");
+				$("#celular_left").removeClass("yt_right2");
 			}, 200)
 			setTimeout(function(){
 				$(".text").addClass("yt_left");

@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/mediaQueries.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <!--script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script-->
     <script type="text/javascript" src="js/frameworks/jquery.fullPage.js"></script>
     <script type="text/javascript" src="js/javaScript.js"></script>
 </head>
@@ -21,26 +21,32 @@
 <body>
     <div id="fullpage">
         <div class="section" id="section0">
-                <div class="yt_video inactive">
-                    <div class="yt_close_button yt_close" id="pause_button"><img alt='cerrar video de youtube' src="imgs/icon/cross.svg"/></div>
-                    <div id="player"></div>
+            <div class="yt_video inactive">
+                <div class="yt_close_button yt_close" id="pause_button">
+                    <img alt='cerrar video de youtube' src="imgs/icon/cross.svg"/>
                 </div>
+                <div id="player"></div>
+            </div>
             <div class="background" id="bg"></div>
-                <div class="container">
-                    <div class="row inactive_left yt_bottom" id="row0">
-                        <div class="text yt_left">
-                            <img class="logo_centro" src="imgs/logo.png">
-                            <h1 class="section_title">Somos más,</br>pagamos menos</h1>
-                            <p class="section_text">Una App para que los pequeños comerciantes</br>compremos al precio de los grandes.</p>
-                        </div>
-                        <a class="playstore" href='https://play.google.com/store/apps/details?id=ar.com.centraldeofertas.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponible en  Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/es-419_badge_web_generic.png'/></a>
+            <div class="container">
+                <div class="row inactive_left yt_bottom" id="row0">
+                    <div class="text yt_left">
+                        <img class="logo_centro" src="imgs/logo.png" alt="logo central de ofertas">
+                        <h1 class="section_title">Somos más,</br>pagamos menos</h1>
+                        <p class="section_text">Una App para que los pequeños comerciantes</br>compremos al precio de los grandes.</p>
                     </div>
-                    <a class="yt_button" id="play_button"><img alt='Ver video de youtube' src="imgs/icon/btn_play.svg"/></a>
-                    <div class="image" >
-                        <img class="celular" id="celular_right" src="imgs/phone_a.png">
-                        <img class="celular" id="celular_left" src="imgs/phone_b.png">
+                    <div style="overflow: hidden;">
+                        <a class="playstore inactive_bottom" href='https://play.google.com/store/apps/details?id=ar.com.centraldeofertas.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+                            <img alt='Disponible en  Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/es-419_badge_web_generic.png'/>
+                        </a>
                     </div>
                 </div>
+                <a class="yt_button" id="play_button"><img alt='Ver video de youtube' src="imgs/icon/btn_play.svg"/></a>
+                <div class="image">
+                    <img class="celular yt_right1" id="celular_right" alt="captura de pantalla de aplicacion" src="imgs/phone_a.png">
+                    <img class="celular yt_right2" id="celular_left" alt="captura de pantalla de aplicacion" src="imgs/phone_b.png">
+                </div>
+            </div>
         </div>
         <div class="section" id="section1">
             <div class="backdrop"></div>
@@ -53,7 +59,9 @@
                         <h1 class="section_title internal movement_left" id="section_title1">Unite gratis </br>a nuestra comunidad</h1>
                         <p class="section_text transition" id="section_text1">Bajate la App y formá parte.</br>Ahora lo sabés, a la hora de comprar no estamos solos.</p>
                     </div>
-                    <a class="playstore inactive_left" id="playstore1" href='https://play.google.com/store/apps/details?id=ar.com.centraldeofertas.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponible en Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/es-419_badge_web_generic.png'/></a>
+                    <div style="overflow: hidden;">
+                        <a class="playstore inactive_left" id="playstore1" href='https://play.google.com/store/apps/details?id=ar.com.centraldeofertas.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponible en Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/es-419_badge_web_generic.png'/></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,7 +76,9 @@
                         <h1 class="section_title internal movement_left" id="section_title2">Sumate a las compras</br>que te interesen</h1>
                         <p class="section_text transition" id="section_text2">Aprovechemos las ventajas de estar conectados.</br>Compremos juntos, en cantidad, a mejor precio y directo de fabricante.</p>
                     </div>
-                    <a class="playstore inactive_right" id="playstore2" href='https://play.google.com/store/apps/details?id=ar.com.centraldeofertas.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponible en Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/es-419_badge_web_generic.png'/></a>
+                    <div style="overflow: hidden;">
+                        <a class="playstore inactive_right" id="playstore2" href='https://play.google.com/store/apps/details?id=ar.com.centraldeofertas.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponible en Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/es-419_badge_web_generic.png'/></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -83,7 +93,9 @@
                         <h1 class="section_title internal movement_left" id="section_title3"">Recibí en tu puerta</h1>
                         <p class="section_text transition" id="section_text3">Pagá contra entrega en la peurta de tu comercio</br>y empezá a provechar la diferencia de comrpar juntos.</p>
                     </div>
-                    <a class="playstore inactive_left" id="playstore3" href='https://play.google.com/store/apps/details?id=ar.com.centraldeofertas.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponible en Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/es-419_badge_web_generic.png' /></a>
+                    <div style="overflow: hidden;">
+                        <a class="playstore inactive_left" id="playstore3" href='https://play.google.com/store/apps/details?id=ar.com.centraldeofertas.app&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponible en Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/es-419_badge_web_generic.png' /></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,8 +111,7 @@
                     </div>
                     <div>
                         <p class="bold-text">¿Querés saber más? Dejanos tu mail</p>
-                        <input type="text" nam
-                        ="email" class="email" placeholder="Email">
+                        <input type="text" name="email" class="email" placeholder="Email">
                         <div class="boton">ENVIAR</div>
                     </div>
                 </div>
