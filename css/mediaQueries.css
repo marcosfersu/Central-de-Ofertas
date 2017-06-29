@@ -105,7 +105,7 @@
 		.image { 
 		    margin: 0 auto;
 		    top: 0;
-		    transform: translateY(85%);
+		    transform: translateY(-131%);
 		    display: block;
 		    float: none;
 		}
@@ -152,7 +152,7 @@
 		#section0 div .yt_bottom {
 		    width: 51%;
 		    top: 0;
-		    transform: translateY(50%);
+		    transform: translateY(85%);
 		    float: none;
 		    text-align: center;
 		    min-width: 286px;
@@ -163,7 +163,7 @@
   		}
 
   		.yt_button{
-			top: 90%;
+			top: 95%;
   		}
 
   		#section0 div .yt_right1 {
@@ -185,6 +185,7 @@
 		    float: none;
 		    left: 0;
 		}
+
 
 		.section .row {
 			width: 100%;
@@ -244,6 +245,18 @@
 
 		.text{
 			margin-left: 0;
+		}
+
+		.celular{
+			display: none;
+		}
+
+		#section0 .container{
+			max-width: 100%;
+		}
+
+		#section4 .container{
+			max-width: 100%;
 		}
 	}
 

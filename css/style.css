@@ -58,21 +58,21 @@ body {
 }
 
 .section .playstore{
-    transition: all 1.5s ease;    
+    transition: all 1s ease;    
 }
 
 .section .section_text{
-    transition: all 1.5s ease; 
+    transition: all 1s ease; 
     transition-delay: 1000ms;  
 }
 
 .section .section_title{
-    transition: all 1s ease-out;
+    transition: all 0.7s ease-out;
     transition-delay: 500ms;
 }
 
 .section .section_icon{
-    transition: all 1.5s ease;
+    transition: all 1s ease;
     transition-delay: 1700ms;    
 }
 
